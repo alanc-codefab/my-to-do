@@ -30,6 +30,7 @@
             "prototype": "digit/ui/button.reel",
             "properties": {
                 "element": {"#": "button"},
+                "active": true,
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true",
@@ -50,7 +51,12 @@
             }
         },
         "rangeController": {
-            "prototype": "montage/core/range-controller"
+            "prototype": "montage/core/range-controller",
+            "properties": {
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
+            }
         },
         "title": {
             "prototype": "digit/ui/title.reel",
