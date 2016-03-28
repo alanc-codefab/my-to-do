@@ -19,10 +19,7 @@
         "actionEventListener": {
             "prototype": "montage/core/event/action-event-listener",
             "properties": {
-                "action": "addContent",
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true",
+                "action": "addTask",
                 "handler": {"@": "rangeController"}
             },
             "_dev": {
@@ -33,12 +30,11 @@
             "prototype": "digit/ui/button.reel",
             "properties": {
                 "element": {"#": "button"},
-                "active": false,
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true",
                 "enabled": true,
-                "label": "New Task"
+                "label": "New task"
             },
             "listeners": [
                 {
