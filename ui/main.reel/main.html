@@ -10,7 +10,10 @@
     {
         "owner": {
             "properties": {
-                "element": {"#": "main"}
+                "element": {"#": "main"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
             }
         },
         "actionEventListener": {
@@ -30,7 +33,7 @@
             "prototype": "digit/ui/button.reel",
             "properties": {
                 "element": {"#": "button"},
-                "active": true,
+                "active": false,
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true",
@@ -40,6 +43,7 @@
             "listeners": [
                 {
                     "type": "action",
+                    "useCapture": true,
                     "listener": {"@": "actionEventListener"}
                 }
             ]
@@ -47,7 +51,10 @@
         "list": {
             "prototype": "digit/ui/list.reel",
             "properties": {
-                "element": {"#": "list"}
+                "element": {"#": "list"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
             }
         },
         "rangeController": {
